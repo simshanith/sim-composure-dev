@@ -1,4 +1,4 @@
 markdown2 () 
 { 
-    draft markdown
+    markdown ../.nvm/README.markdown | pygmentize -l html
 }
