@@ -5,5 +5,5 @@ findcomposure ()
     param '';
     example '';
     group '';
-    draft findcomposure
+    findcomposure
 }
