@@ -5,7 +5,7 @@ findcomposure ()
     param '';
     example '';
     group '';
-    local $README = '~/.local/composure/README.txt'
+    local README = '~/.local/composure/README.txt'
     echo $README;
     markdown $README | ag composure
 }
