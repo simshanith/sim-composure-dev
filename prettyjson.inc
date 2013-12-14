@@ -1,9 +1,9 @@
 prettyjson () 
 { 
     author 'Shane Daniel';
-    about '';
+    about 'Display JSON in terminal; sort alphanumerically (ascending) by keys recursively';
     param '';
     example '';
-    group '';
-    draft prettyjson
+    group 'util';
+    python -mjson.tool $1 | pygmentize -l json
 }
