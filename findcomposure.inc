@@ -5,5 +5,5 @@ findcomposure ()
     param '';
     example '';
     group '';
-    findcomposure
+    markdown ~/.local/composure/README.txt | ag composure
 }
