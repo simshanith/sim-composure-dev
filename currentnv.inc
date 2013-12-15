@@ -5,5 +5,5 @@ currentnv ()
     param '';
     example '';
     group 'nvm';
-    nvm ls current | ack --cc '(v[\d]*\.[\d]*.[\d]*)' --output '$1'
+    nvm ls current | ack --nocolor "(?P<version>v[\d]*\.[\d]*.[\d]*)" --output "$+{version}"
 }
