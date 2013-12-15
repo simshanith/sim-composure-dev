@@ -1,9 +1,9 @@
 ackurl () 
 { 
     author 'Shane Daniel';
-    about '';
+    about 'Simple regex finder for URLs.';
     param '';
-    example '';
-    group '';
-    draft ackurl
+    example 'ackurl README.md; curl http://google.com/ | ackurl';
+    group 'util';
+    ack '\bhttps?://[^?]+?[/[\w|/|\-|\.|\#|\?|\=]*]*\b'
 }
