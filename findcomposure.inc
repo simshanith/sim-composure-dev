@@ -8,4 +8,6 @@ findcomposure ()
     local README="~/.local/composure/README.txt"
     echo $README
     markdown ~/.local/composure/README.txt | ag composure
+    echo "Use \`glossary\` to see available functions."
+    glossary
 }
