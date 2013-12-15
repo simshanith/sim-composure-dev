@@ -1,13 +1,9 @@
 nametab () 
 { 
-    author 'Shane Daniel';
-    about 'Sets name of a tab in iTerm2. Requires name argument.';
-    param 'Name of the new tab.';
-    example 'nametab "workspace"';
-    group 'util';
     if [ -z "$1" ]; then
-        echo "Usage: (from \`glossary\`)"
-        glossary | ag -Q -w nametab
+        echo "Usage:"
+        echo "\`nametab workspace\`"
+        echo "Sets the tab's namespace in iTerm using escape sequence."
     else
         echo -e "\033];$1\007"
     fi
