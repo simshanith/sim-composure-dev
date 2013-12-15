@@ -4,6 +4,6 @@ currentnv ()
     about '';
     param '';
     example '';
-    group '';
-    draft currentnv
+    group 'nvm';
+    nvm ls current | ack --cc '(v[\d]*\.[\d]*.[\d]*)' --output '$1'
 }
