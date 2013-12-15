@@ -9,5 +9,5 @@ findcomposure ()
     echo $README
     markdown ~/.local/composure/README.txt | ag -Q -w composure
     echo "Use \`glossary\` to see available functions."
-    glossary | ag -Q composure
+    glossary | ag -Q -w glossary
 }
