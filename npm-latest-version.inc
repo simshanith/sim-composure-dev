@@ -5,5 +5,5 @@ npm-latest-version ()
     param '';
     example '';
     group '';
-    draft npm-latest-version
+    npm info $1 | underscore extract version
 }
