@@ -5,5 +5,5 @@ browseNPMrepo ()
     param '';
     example '';
     group '';
-    npm ls
+    open `npm info $1 | underscore extract repository.url --outfmt "text"`
 }
