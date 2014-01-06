@@ -5,5 +5,5 @@ browseNPMrepo ()
     param '';
     example '';
     group '';
-    draft browseNPMrepo
+    npm ls
 }
