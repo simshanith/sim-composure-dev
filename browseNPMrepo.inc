@@ -5,5 +5,5 @@ browseNPMrepo ()
     param '';
     example '';
     group '';
-    open `npm info $1 | underscore extract repository.url --outfmt "text"`
+    open -a Google\ Chrome.app `npm info $1 | underscore extract repository.url --outfmt "text"`
 }
