@@ -1,4 +1,4 @@
-npm-latest-version () 
+npmLatestVersion () 
 { 
     author 'Shane Daniel';
     about '';
